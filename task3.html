@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			header h1 {
+				text-align: center;
+			}
+			/*
+				I got the below CSS from https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_cols
+			*/
+			* {
+    			box-sizing: border-box;
+			}
+			.column {
+				float: left;
+				padding: 15px;
+			}
+			.clearfix::after {
+				content: " ";
+				clear: both;
+				display: table;
+			}
+			.links {
+				width: 33%;
+			}
+			.content {
+				width: 66%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>HW02 Task Three</h1>
+		</header>
+		<div id="clearfix">
+			<div class="column links">
+				<ul>
+      				<li><a id="lorem-ipsem" href="#lorem-ipsem">Lorem Ipsem</a></li>
+      				<li><a id="99-bottles" href="#99-bottles">99 Bottles</a></li>
+				    <li><a id="last-thing" href="#last-thing">Last Thing</a></li>
+    			</ul>
+			</div>
+			<div id="content" class="column content">
+			</div>
+		</div>
+		<script src="js/task3.js"></script>
+	</body>
+</html>
